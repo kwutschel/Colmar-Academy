@@ -1,3 +1,138 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* Universal Styles: DESKTOP */
+h2 {
+	margin: 32px auto;
+	text-align: center;
+}
+
+
+/* Navigation Bar: DESKTOP */
+header .desktop {
+	height: 64px;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto 24px;
+}
+
+header .desktop .logo {
+	display: flex;
+	align-items: center;
+	height: 32px;
+}
+
+.desktop nav ul {
+	display: flex;
+}
+
+.desktop nav ul li {
+	margin-left: 16px;
+}
+
+.desktop nav ul:first-child {
+	margin-left: none;
+}
+
+/* Banner Section: DESKTOP */
+.banner {
+	display: flex;
+	align-items: center; 
+	background-color: #DADADA;
+}
+
+.banner .image {
+	width: 60%;
+	overflow: hidden;
+	margin-right: 24px;
+}
+
+.banner .image img {
+	max-width: 100%;
+	height: auto;
+	padding: 32px 24px;
+}
+
+.banner .content {
+	padding-left: 24px;
+}
+
+/* Information Section: DESKTOP */
+.information {
+	display: flex;
+}
+
+.information .quote {
+	width: 60%;
+	overflow: hidden;
+	margin: 32px 24px;
+}
+
+.information .quote img {
+	margin-bottom: 32px;
+}
+
+.sidebar {
+	width: 40%;
+	margin: 32px auto;
+}
+
+.sidebar .info {
+	display: flex;
+	align-items: center;
+}
+
+.sidebar .info .image {
+	width: 35%;
+	height: auto;
+	overflow: hidden;
+	margin: 16px 16px;
+}
+
+.sidebar .info .image:first-child {
+	margin-top: 0px;
+}
+
+.sidebar .info .image img {
+	max-width: 100%;
+	height: auto;
+}
+
+.sidebar .info .content {
+	width: 65%;
+}
+
+/* Cards Section: DESKTOP */
+
+.course-offerings {
+	background-color: #DADADA;
+	padding: 32px auto;
+
+}
+
+.course-offerings .courses {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.courses .card {
+	width: 30%;
+	height: auto;
+	overflow: hidden;
+	padding: 32px 16px;
+	background-color: #ffffff;
+
+}
+
+.courses .card img {
+	max-widht: 100%;
+	height: auto;
+}
+
+.card .card-content {
+}
+
