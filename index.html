@@ -10,7 +10,7 @@
 
 <body>
 <!--Menu: BEGIN-->
-  <header>
+  <header class="large">
 	<div class="desktop"><!--Menu on desktop-->
       <div class="logo">
 	    <img src="Resources/images/ic-logo.svg" alt="Colmar Academy logo" />
@@ -26,11 +26,20 @@
 	  </nav>
 	</div>
   </header>
+<!--Menu on mobile-->
+  <header class="mobile">
+  <div class="logos">
+	  <a src="#"><img src="Resources/images/ic-logo.svg" alt="Colmar Academy logo"></a>
+	  <a src="#"><img src="Resources/images/ic-on-campus.svg" alt="On Campus"></a>
+	  <a src="#"><img src="Resources/images/ic-online.svg" alt="Online"></a>
+	  <a src="#"><img src="Resources/images/ic-login.svg" alt="Login"></a>
+	</div>
+  </header>
 <!--Menu: END-->
 	
-<!--Main content on desktop-->
+<!--Main content: BEGIN-->
   <main>
-<!--Banner on desktop-->
+<!--Banner: BEGIN-->
 	<div class="banner">
 	  <div class="image">
 		<img src="Resources/images/banner.jpg" alt="People studying">
@@ -41,6 +50,7 @@
 		<p id="button">START HERE</p>
 	  </div>
 	</div>
+<!--Banner: END-->
 <!--Main content on desktop-->
     <div class="information">
 	  <div class="quote">
@@ -49,12 +59,13 @@
 		<p>"Curabitur vita libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor, consequat, tristique ligula."</p><br>
 		  <p class="bold">Emmanuel, Sr Strategist at Hiring.com</p>
       </div>
-<!--Sidebar on desktop-->
+<!--Sidebar: BEGIN-->
 	  <div class="sidebar">
 <!--Sidebar Item 1-->
 		 <div class="info">
 		   <div class="image">
-		     <img src="Resources/images/information-orientation.jpg" alt="Orientation Information">
+		     <img class="desktop" src="Resources/images/information-orientation.jpg" alt="Orientation Information">
+			 <img class="mobile" src="Resources/images/information-orientation-mobile.jpg" alt="Orientation Information">
 		   </div>
 		   <div class="content">
 		     <h3>Orientation Date</h3>
@@ -65,7 +76,8 @@
 <!--Sidebar Item 2-->
 		 <div class="info">
 		   <div class="image">
-		     <img src="Resources/images/information-campus.jpg" alt="Our Campus">
+		     <img class="desktop" src="Resources/images/information-campus.jpg" alt="Our Campus">
+			 <img class="mobile" src="Resources/images/information-campus-mobile.jpg" alt="Our Campus">
 		   </div>
 		   <div class="content">
 		     <h3>Our Campus</h3>
@@ -76,7 +88,8 @@
 <!--Sidebar Item 3-->
 		 <div class="info">
 		   <div class="image">
-		     <img src="Resources/images/information-guest-lecture.jpg" alt="Lecture">
+		     <img class="desktop" src="Resources/images/information-guest-lecture.jpg" alt="Lecture">
+			 <img class="mobile" src="Resources/images/information-guest-lecture-mobile.jpg" alt="Lecture">
 		   </div>
 		   <div class="content">
 		     <h3>Our Guest Lecture</h3>
@@ -148,9 +161,9 @@
 	</div>
 <!--Learning Section on desktop: END--><!--Thesis Section on desktop: BEGIN-->
 <div class="thesis">
-  <h2>Thesis exhibit</h2>	
+  <h2>Thesis exhibits</h2>	
   <div class="information">
-    <div class="quote">
+    <div class="quote" id="video">
 	  <video width="100%" controls>
 		  <source src="Resources/videos/thesis.mp4">
 		</video>
@@ -158,7 +171,7 @@
 	  <p>"Curabitur vita libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor, consequat, tristique ligula."</p>
     </div>
 <!--Sidebar on desktop-->
-	<div class="sidebar">
+	<div class="sidebar" id="bottom">
 <!--Sidebar Item 1-->
 	  <div class="info">
 	    <div class="image">

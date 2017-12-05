@@ -91,6 +91,29 @@ header .desktop .logo #bold {
 	margin-left: none;
 }
 
+@media only screen and (min-width: 480px) {
+	.mobile {
+		display: none;
+	}
+}
+
+/* Navigation Bar: MOBILE */
+.mobile {
+	height: 4rem;
+}
+
+.mobile .logos {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+	.large {
+		display: none;
+	}
+}
+
 /* Banner Section: DESKTOP */
 .banner {
 	display: flex;
@@ -131,7 +154,47 @@ header .desktop .logo #bold {
 	padding: .5rem 0;
 	text-align: center;
 	border-radius: .5rem;
+}
+
+@media only screen and (min-width: 480px) {
+	.mobile-banner {
+		display: none;
+	}
+}
+
+/* Banner Section: MOBILE */
+@media only screen and (max-width: 480px) {
+	.banner {
+		flex-direction: column;
+	}
 	
+	.banner .image {
+		width: 100%;
+		margin: 0 0 2rem 0;
+	}
+	
+	.banner .image img {
+		padding: 0;
+	}
+	
+	.banner .content {
+		margin: 0 1rem;
+		width: 100%;
+	}
+	
+	.banner .content h1 {
+		font-size: 2rem;
+		line-height: 3rem;
+		margin-bottom: 2rem;
+	}
+	
+	.banner .content p {
+		margin-bottom: 1.5rem;
+	}
+	
+	.banner .content #button {
+		margin: 0 1rem 2rem 0;
+	}
 }
 
 /* Information Section: DESKTOP */
@@ -178,7 +241,7 @@ header .desktop .logo #bold {
 	margin-top: 0px;
 }
 
-.sidebar .info .image img {
+.sidebar .info .image .desktop {
 	max-width: 100%;
 	height: auto;
 	filter: grayscale(55%);
@@ -194,6 +257,47 @@ header .desktop .logo #bold {
 	font-size: 1rem;
 	line-height: 3.5rem;
 	color: #19d7d7;
+}
+
+@media only screen and (min-width: 480px) {
+	.sidebar .info .image .mobile {
+		display: none;
+	}
+}
+
+/* Information Section: MOBILE */
+@media only screen and (max-width: 480px) {
+	.information .quote {
+	display: none;
+}
+	
+	.sidebar {
+		width: 100%;
+	}
+	
+	.sidebar .info {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		margin: 1rem 1rem;
+	}
+	
+	.sidebar .info .image {
+		width: 100%;
+	}
+	
+	.info img {
+		width: 90%;
+		height: auto;
+	}
+
+	.sidebar .info .image .mobile {
+		max-width: 100%;
+	}
+	
+	.sidebar .info .image .desktop {
+		display: none;
+	}	
 }
 
 /* Cards Section: DESKTOP */
@@ -245,10 +349,67 @@ header .desktop .logo #bold {
 	margin-left: 1rem;
 }
 
+/* Cards Section: MOBILE */
+@media only screen and (max-width: 480px) {
+	.course-offerings .courses .card img {
+		display: none;
+	}
+	
+	.course-offerings .courses .card p {
+		display: none;
+	}
+	
+	.course-offerings {
+		padding-bottom: 2rem;
+	}
+	
+	.course-offerings .courses {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.courses .card {
+		width: 100%;
+		padding: .5rem;
+	}
+	
+	.courses .card .content {
+		height: 3rem;
+		padding-bottom: 0rem;
+	}
+	
+	.courses .card .content h4 {
+		font-size: 1.25rem;
+		padding: 1rem;
+	}
+}
+
 /* Bottom Section: DESKTOP */
 
 .thesis h2 {
 	color: #430035
+}
+
+/* Bottom Section: MOBILE */
+@media only screen and (max-width: 480px) {
+	
+	#video { 
+		display: block;
+		width: 100%;
+		
+	}
+	
+	#video h2 {
+		display: none;
+	}
+	
+	#video p {
+		display: none;
+	}
+	
+	#bottom {
+		display: none;
+	}
 }
 
 /* Footer Section: DESKTOP */
