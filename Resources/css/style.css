@@ -36,6 +36,11 @@ h4 {
 	font-weight: 700;
 	font-size: 1.5rem;
 	color: #f25b3e;
+	transition: color 100ms ease-out 50ms;
+}
+
+h4:hover {
+	color: #19d7d7;
 }
 
 p {
@@ -83,8 +88,13 @@ header .desktop .logo #bold {
 	color: #5b5a5a;
 }
 
+.desktop nav ul li:hover {
+	color: #f25b3e
+}
+
 .desktop nav ul li {
 	margin-left: 1rem;
+	transition: color 300ms ease-out 50ms;
 }
 
 .desktop nav ul:first-child {
@@ -106,6 +116,11 @@ header .desktop .logo #bold {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	transition: background-color 100ms linear 0ms;
+}
+
+.mobile .logos:active {
+	background-color: #f25b3e;
 }
 
 @media only screen and (max-width: 480px) {
@@ -137,6 +152,7 @@ header .desktop .logo #bold {
 .banner .content {
 	padding-left: 1.5rem;
 	width: 30%;
+	overflow: scroll;
 }
 
 .banner .content p {
@@ -144,6 +160,8 @@ header .desktop .logo #bold {
 	font-size: 1.5rem;
 	line-height: 2rem;
 	color: #5b5a5a;
+	max-width: 100%;
+	height: auto;
 }
 
 .banner .content #button {
@@ -154,11 +172,27 @@ header .desktop .logo #bold {
 	padding: .5rem 0;
 	text-align: center;
 	border-radius: .5rem;
+	transition: background-color 150ms ease-out 50ms;
+	max-width: 100%;
+	height: auto;
+}
+
+.banner .content #button:hover {
+	background-color: #f25b3e;
 }
 
 @media only screen and (min-width: 480px) {
 	.mobile-banner {
 		display: none;
+	}
+}
+
+
+/* Banner Section: Tablet 950px */
+@media only screen and (max-width: 950px) {
+	.banner .content h1 {
+		font-size: 2.5rem;
+		line-height: 3rem;
 	}
 }
 
@@ -257,11 +291,45 @@ header .desktop .logo #bold {
 	font-size: 1rem;
 	line-height: 3.5rem;
 	color: #19d7d7;
+	transition: color 50ms ease-out 100ms;
+}
+
+.sidebar .info a:hover {
+	color: #f25b3e;
 }
 
 @media only screen and (min-width: 480px) {
 	.sidebar .info .image .mobile {
 		display: none;
+	}
+}
+
+/* Information Section: Tablet 950px */
+@media only screen and (min-width: 480px) and (max-width: 950px) {
+	.information {
+		flex-direction: column;
+	}
+	
+	.information .quote {
+		width: 95%;
+		margin-right: 1.5rem;
+
+	}
+	
+	.sidebar {
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+	}
+	
+	.sidebar .info {
+		flex-direction: column;
+		justify-content: center;
+		width: 30%;
+	}
+	
+	.sidebar .info .image {
+		width: 60%;
 	}
 }
 
@@ -344,9 +412,27 @@ header .desktop .logo #bold {
 }
 
 .courses .card .content p {
-	font-size: .75;
+	font-size: 1rem;
 	line-height: 2rem;
 	margin-left: 1rem;
+}
+
+/* Cards Section: TABLET (950px) */
+@media only screen and (min-width: 480px) and (max-width: 950px) {
+	.courses .card {
+		width: 40%;
+	}
+	
+	.courses .card .content h4 {
+		font-size: 1.25rem;
+	}
+	
+	.courses .card .content p {
+		font-size: .8125rem;
+		line-height: 1rem;
+		
+	}
+
 }
 
 /* Cards Section: MOBILE */
@@ -379,24 +465,49 @@ header .desktop .logo #bold {
 	}
 	
 	.courses .card .content h4 {
-		font-size: 1.25rem;
+		font-size: 1rem;
 		padding: 1rem;
 	}
+	
 }
 
-/* Bottom Section: DESKTOP */
+/* Thesis Section: DESKTOP */
 
 .thesis h2 {
 	color: #430035
 }
 
-/* Bottom Section: MOBILE */
+#bottom .info {
+	display: flex;
+	align-items: center;
+}
+
+#bottom .image {
+	width: 35%;
+	height: auto;
+	overflow: hidden;
+	margin: 1rem 1rem;
+}
+
+/* Thesis Section: Tablet 950px */
+@media only screen and (min-width: 480px) and (max-width: 950px) {
+	#bottom .info {
+		width: 50%;
+		justify-content: center;
+	}
+	
+	#bottom .image {
+		width: 90%;
+		margin-left: 24px;
+	}
+}
+
+/* Thesis Section: MOBILE */
 @media only screen and (max-width: 480px) {
 	
 	#video { 
 		display: block;
 		width: 100%;
-		
 	}
 	
 	#video h2 {
@@ -425,9 +536,24 @@ footer .copyright {
 
 footer .copyright ul {
 	display: flex;
+	justify-content: space-around;
 	
 }
 
 footer .copyright ul li {
-	padding: auto 1rem;
+	padding-left: 1rem;
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	color: #f25b3e;
+	font-size: 1.25rem;
+}
+
+/* Footer Section: MOBILE */
+@media only screen and (max-width: 480px) {
+	footer .copyright ul li {
+		display: none;
+	}	
+	footer .copyright p {
+		font-size: 1rem;	
+		}
 }
